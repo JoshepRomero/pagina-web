@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería Villapan</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div style="width: 1440px; height: 662px; background-image: url('img/fondo.png'); background-size: cover; background-position: center;">
+        <div style="position: absolute; top: 50px; left: 300px; font-size: 18px; color: black; font-family: 'Poppins', sans-serif;">
+            +3022374824
+        </div>
+         <div style="position: absolute; top: 615px; left: 30px;">
+                 <img src="img/busqueda.png" alt="Logo Panadería" style="width: 30px;" />
+         </div>
+         <div style="position: absolute; top: 615px; left: 80px;">
+                 <img src="img/face.png" alt="Logo Panadería" style="width: 30px;" />
+         </div>
+         <div style="position: absolute; top: 615px; left: 130px;">
+                 <img src="img/insta.png" alt="Logo Panadería" style="width: 30px;" />
+         </div>
+        <div style="position: absolute; top: 45px; left: 580px;">
+            <input type="text" id="input-busqueda" placeholder="" 
+                style="width: 180px; height: 33px; background-color: #fdac00; border-radius: 25px; border: none; padding-left: 40px; font-size: 16px; box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4); color: rgb(255, 255, 255); outline: none;" />
+
+            <div style="position: absolute; top: 9px; left: 12px; width: 22px; height: 22px;">
+                <svg width="17" height="17" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.502 14.8462L8.38507 9.89436C7.97896 10.2088 7.51194 10.4577 6.984 10.6411C6.45606 10.8245 5.89428 10.9162 5.29866 10.9162C3.82314 10.9162 2.5745 10.4215 1.55274 9.43218C0.530981 8.44286 0.019829 7.2345 0.0192875 5.8071C0.0187461 4.3797 0.529898 3.17134 1.55274 2.18202C2.57559 1.19269 3.82423 0.698029 5.29866 0.698029C6.7731 0.698029 8.02201 1.19269 9.04539 2.18202C10.0688 3.17134 10.5797 4.3797 10.578 5.8071C10.578 6.38351 10.4833 6.92717 10.2938 7.43807C10.1042 7.94898 9.84705 8.40094 9.52216 8.79394L14.6391 13.7458L13.502 14.8462ZM5.29866 9.34415C6.31393 9.34415 7.17704 9.0004 7.88799 8.3129C8.59895 7.62541 8.95416 6.79014 8.95361 5.8071C8.95307 4.82406 8.59787 3.98906 7.88799 3.30208C7.17812 2.61511 6.31501 2.2711 5.29866 2.27005C4.28231 2.269 3.41948 2.61301 2.71014 3.30208C2.00081 3.99115 1.64533 4.82616 1.64371 5.8071C1.64209 6.78804 1.99756 7.62331 2.71014 8.3129C3.42272 9.0025 4.28556 9.34625 5.29866 9.34415Z" fill="#FFFBFB"/>
+                </svg>
+        </div>
+
+            <!--  Lista de sugerencias -->
+            <ul id="sugerencias" style="position: absolute; top: 38px; left: 0; width: 180px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); padding: 0; margin: 5px 0 0 0; list-style: none; font-family: 'Poppins', sans-serif; font-size: 14px; display: none; z-index: 99;">
+            </ul>
+        </div>
+
+        <div id="boton-inicio" style="position: absolute; top: 52px; left: 940px; font-size: 16px; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: #fdac00; display: flex; align-items: center; cursor: pointer;">
+         INICIO
+        </div>
+
+        <div id="btn-registro"
+            style="position: absolute; top: 50px; left: 1115px; font-size: 16px; font-family: 'Poppins', sans-serif; color: black; display: flex; align-items: center; cursor: pointer;">
+                REGISTRARSE
+        </div>
+        <div style="position: absolute; top: 8px; left: 1250px;">
+            <img src="img/logo.png" alt="Logo Panadería" style="width: 220px;" />
+        </div>
+        <div style="position: absolute; top: 315px; left: 995px; color: #fdac00; font-size: 52px; font-family: 'Rounded Mplus 1c Bold', sans-serif; font-weight: bold;">
+            EL MEJOR PAN
+        </div>
+        <div style="position: absolute; top: 385px; left: 1100px; color: black; font-size: 22px; font-family: 'Rounded Mplus 1c Bold', sans-serif;">
+            Recien Horneado
+        </div>
+        <div style="position: absolute; top: 420px; left: 1095px; color: #fdac00; font-size: 40px; font-weight: bold; font-family: 'Rounded Mplus 1c Bold', sans-serif;">
+            30% OFF
+        </div>
+        <div style="position: absolute; top: 475px; left: 1025px; color: black; font-size: 22px; font-family: 'Rounded Mplus 1c Bold', sans-serif;">
+            En toda la panadería esta semana
+        </div>
+   </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+
+    <div style="width: 1440px; margin: 0 auto; display: flex;">
+
+        <div class="menu-boton" data-seccion="combos">Combos</div>
+        <div class="menu-boton" data-seccion="promociones">Promociones</div>
+        <div class="menu-boton" data-seccion="panes">Panes</div>
+        <div class="menu-boton" data-seccion="bebidas">Bebidas</div>
+    </div>
+
+    </div>
+
+    <!-- Combos -->
+    <div class="combos" style="display: none;">
+        <div style="position: relative; width: 100%; height: 220px; background-color: #fdac00; box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25); z-index: 999;">
+            <div style="position: absolute; top: 15px; left: 50px;">
+            <img src="img/logo-negro.png" alt="Logo Panadería" style="width: 210px;" />
+            </div>
+            <div style="position: absolute; top: 85px; left: 340px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+            Combos
+            </div>
+        </div>
+        <div style="width: 1440px; height: 772px; background-image: url('img/fondocombo.png'); background-size: cover; background-position: center; padding: 80px 60px;">
+            <div class="combo-grid">
+
+                    <!-- Combo 1 -->
+                    <div class="combo-card">
+                        <img src="img/combo1.png" alt="Croissant con café" />
+                        <div class="combo-info">
+                        <h3>Croissant con Café<br>📌 Precio: $3.000 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 2 -->
+                    <div class="combo-card">
+                        <img src="img/combo2.png" alt="Pan de bono y café con leche" />
+                        <div class="combo-info">
+                        <h3>Pan de bono y Café con leche<br>📌 Precio: $5.800 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 3 -->
+                    <div class="combo-card especial-top">
+                        <img src="img/combo3.png" alt="Bagels con café frío" />
+                        <div class="combo-info">
+                        <h3>Bagels con Café frío<br>📌 Precio: $6.500 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 4 -->
+                    <div class="combo-card especial-top2">
+                        <img src="img/combo4.png" alt="Pan de jamón y mocha" />
+                        <div class="combo-info">
+                        <h3>Pan de jamón y queso con Mocha<br>📌 Precio: $10.000 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 5 -->
+                    <div class="combo-card">
+                        <img src="img/combo5.png" alt="Rollitos con café" />
+                        <div class="combo-info">
+                        <h3>Rollitos con Café<br>📌 Precio: $4.500 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 6 -->
+                    <div class="combo-card">
+                        <img src="img/combo6.png" alt="Galletas con café frío" />
+                        <div class="combo-info">
+                        <h3>Galletas de coco con Café frío <br>📌 Precio: $6.500 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 7 -->
+                    <div class="combo-card">
+                        <img src="img/combo7.png" alt="Arequipe con café con leche" />
+                        <div class="combo-info">
+                        <h3>Pan de arequipe con Café con leche<br>📌 Precio: $5.700 COP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Combo 8 -->
+                    <div class="combo-card especial-top3">
+                        <img src="img/combo8.png" alt="Pan de leche con café" />
+                        <div class="combo-info">
+                        <h3>Pan de leche con Café<br>📌 Precio: $8.500 COP</h3>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="promociones" style="display: none;">
+        <div style="position: relative; width: 100%; height: 220px; background-color: #fdac00; box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25); z-index: 999;">
+            <div style="position: absolute; top: 15px; left: 50px;">
+            <img src="img/logo-negro.png" alt="Logo Panadería" style="width: 210px;" />
+            </div>
+            <div style="position: absolute; top: 85px; left: 340px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+            Promociones
+            </div>
+        </div>
+        <div style="width: 1440px; height: 770px; background-image: url('img/promo.png'); background-size: cover; background-position: center;">
+                <ul class="promo-carousel">
+                    <li class="promo-card activo"
+                        data-titulo="Sabor y Frescura"
+                        data-detalle="☕ Café Frío + Pastelitos <br> 💰 Solo por $6.000 COP">
+                        <img src="img/prod-1.png" alt="Promo 1" />
+                    </li>
+
+                    <li class="promo-card"
+                        data-titulo="Refresca tu tarde"
+                        data-detalle="🐴 Pony Malta + 1 Pan de Bono <br> 💰 Solo por $7.800 COP">
+                        <img src="img/prod-2.png" alt="Promo 2" />
+                    </li>
+
+                    <li class="promo-card"
+                        data-titulo="Combo Delicioso"
+                        data-detalle=" 🥪 Pan de Jamón y Queso + 1 Coca-Cola <br> 💰 Solo por $12.000 COP">
+                        <img src="img/prod-3.png" alt="Promo 3" />
+                    </li>
+                </ul>
+
+                <!-- Caja de descripción -->
+                <div id="descripcion-promocion" class="promo-descripcion">
+                </div>
+        </div>
+    </div>
+    </div>
+        <!-- Panes -->
+    <div class="panes" style="display: none;">
+        <div style="position: relative; width: 100%; height: 220px; background-color: #fdac00; box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25); z-index: 999;">
+            <div style="position: absolute; top: 15px; left: 50px;">
+            <img src="img/logo-negro.png" alt="Logo Panadería" style="width: 210px;" />
+            </div>
+            <div style="position: absolute; top: 85px; left: 340px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+            Panes
+            </div>
+        </div>
+        <div style="width: 1440px; height: 771px; background-image: url('img/panes.png'); background-size: cover; background-position: center;"></div>
+    </div>
+        <!-- Bebidas -->
+
+    <div class="bebidas" style="display: none;">
+        <div style="position: relative; width: 100%; height: 220px; background-color: #fdac00; box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25); z-index: 999;">
+            <div style="position: absolute; top: 15px; left: 50px;">
+            <img src="img/logo-negro.png" alt="Logo Panadería" style="width: 210px;" />
+            </div>
+            <div style="position: absolute; top: 85px; left: 340px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+            Bebidas
+            </div>
+        </div>
+        <div style="width: 1440px; height: 770px; background-image: url('img/bebidas.png'); background-size: cover; background-position: center;"></div>
+    </div>
+
+    <div style="position: relative; width: 1440px; height: 666px; background-image: url('img/fondo2.png'); background-size: cover; background-position: center;">   
+            <div class="tarjeta-producto"
+                style="position: absolute; top: 210px; left: 50px;--img-top:-35px; --img-left:65px; --img-width:140px;
+                        --img-top-hover:-180px; --img-width-hover:190px;
+                        --titulo-top:320px; --titulo-top-hover:245px;
+                        --descripcion-top:290px;">
+                
+                <img src="img/cafe-mocha.png" alt="Café Mocha">
+
+                <p class="titulo">Café Mocha</p>
+            <div class="descripcion">
+                Precio: $8.000 COP<br>
+                Incluye:<br>
+                ☑️ 1 Café Mocha (chocolate + espresso + leche) de 300 ml<br>
+                ☑️ Decorado con crema batida y virutas de chocolate🍫✨
+            </div>
+            </div>
+            <div class="tarjeta-producto"
+                style="position: absolute; top: 210px; left: 395px;
+                        --img-top: 50px; --img-left: -35px; --img-width: 350px;
+                        --img-top-hover: -35px; --img-width-hover: 440px;
+                        --titulo-top: 300px; --titulo-top-hover: 230px;
+                        --descripcion-top: 360px;">
+            <img src="img/cafe-pan-frances.png" alt="Café y frances">
+            <p class="titulo">Café con leche<br>y pan frances</p>
+            <div class="descripcion">
+                Precio: $4.900 COP<br>
+                Incluye:<br>
+                ☑️ 1 taza grande de cafe con leche<br>
+                ☑️ 1 pan frances honeado en el dia
+            </div>
+            </div>
+            <div class="tarjeta-producto"
+                style="position: absolute; top: 210px; left: 745px;
+                        --img-top: -35px; --img-left: 60px; --img-width: 150px;
+                        --img-top-hover: -105px; --img-width-hover: 180px;
+                        --titulo-top: 320px; --titulo-top-hover: 250px;
+                        --descripcion-top: 290px;">
+            <img src="img/cafe-frio.png" alt="Café frio">
+            <p class="titulo">Café Frio</p>
+            <div class="descripcion">
+                Precio: $5.000 COP<br>
+                Incluye:<br>
+                ☑️ 1 vaso de café frió de 16 oz<br>
+                ☑️ Hielo filtrado y café 100% arábica<br>
+                ☑️ Leche o bebida vegetal (a elección)
+            </div>
+            </div>
+            <div class="tarjeta-producto"
+                style="position: absolute; top: 210px; left: 1095px;
+                        --img-top: 50px; --img-left: 0px; --img-width: 300px;
+                        --img-top-hover: -50px; --img-width-hover: 370px;
+                        --titulo-top: 320px; --titulo-top-hover: 225px;
+                        --descripcion-top: 280px;">
+            <img src="img/cafe-pan-bono.png" alt="Café pan bono">
+            <p class="titulo">Café y pan de bono</p>
+            
+            <div class="descripcion">
+                Precio: $7.000 COP<br>
+                Incluye:<br>
+                ☑️ 1 taza de café con leche caliente<br>
+                ☑️ 2 pan de bonos artesanales recien horneados
+            </div>
+            </div>
+    </div>
+    <!-- Informacion -->
+    <div class="informacion-arriba">
+            <div style="position: absolute; top: 15px; left: 50px;">
+                 <img src="img/logo-negro.png" alt="Logo Panadería" style="width: 220px;" />
+            </div>
+            <div style="position: absolute; top: 85px; left: 340px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    Información Sobre Nuestra Empresa
+            </div>
+    </div>
+
+    <div class="informacion-abajo">
+            <div style="position: absolute; top: 90px; left: 100px;">
+                 <img src="img/nosotros.png" alt="tres personas" style="width: 300px;" />
+            </div>
+            <div style="position: absolute; top: 100px; left: 440px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    ¿Quienes Somos?
+            </div>
+            <div style="position: absolute; top: 190px; left: 440px; width: 700px; color: black; font-size: 16x; font-family: 'Poppins', sans-serif;">
+                Panadería Villapan es un emprendimiento dedicado a la elaboración y venta de productos de panadería artesanal. Con una imagen fresca, profesional y cercana, nos enfocamos en ofrecer panes, bollería y productos horneados de alta calidad, elaborados con recetas tradicionales y un toque moderno
+            </div>
+            <div style="position: absolute; top: 260px; left: 440px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    Misión
+            </div>
+            <div style="position: absolute; top: 350px; left: 440px; width: 700px; color: black; font-size: 16x; font-family: 'Poppins', sans-serif;">
+                    Ofrecer productos de panadería frescos, sabrosos y artesanales que deleiten a nuestros clientes y promuevan el consumo local, manteniendo altos estándares de calidad e higiene.
+            </div>
+            <div style="position: absolute; top: 420px; left: 440px; font-size: 45px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    Visión
+            </div>
+            <div style="position: absolute; top: 510px; left: 440px; width: 700px; color: black; font-size: 16x; font-family: 'Poppins', sans-serif;">
+                    Convertirnos en una panadería referente en la comunidad por la excelencia de nuestros productos, la atención cercana al cliente y la innovación en sabores y presentaciones.
+            </div>
+            <div style="position: absolute; top: 275px; left: 595px;">
+                 <img src="img/mision.png" alt="tres personas" style="width: 50px;" />
+            </div>
+            <div style="position: absolute; top: 435px; left: 595px;">
+                 <img src="img/vision.png" alt="tres personas" style="width: 70px;" />
+            </div>
+           
+    </div>
+    <!-- Lo ultimo de la pagina -->
+    <div class="final">
+            <div style="position: absolute; top: 15px; left: 640px;">
+                 <img src="img/logo-negro.png" alt="Logo Panadería" style="width: 160px;" />
+            </div>
+            <div style="position: absolute; top: 170px; left: 100px; font-size: 26px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    Redes sociales
+            </div>
+            <div style="position: absolute; top: 170px; left: 615px; font-size: 26px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    Nuestra Empresa
+            </div>
+            <div style="position: absolute; top: 170px; left: 1100px; font-size: 26px; font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;">
+                    Horarios de atencion
+            </div>
+            <div class="titulos" style="position: absolute; top: 250px; left: 100px; font-size: 20px;">
+                @panaderiavillapan
+            </div>
+            <div class="titulos" style="position: absolute; top: 310px; left: 100px; font-size: 20px;">
+                Panaderia VillaPan
+            </div>
+            <div class="titulos" style="position: absolute; top: 370px; left: 100px; font-size: 20px;">
+                Panaderia_VillaPan
+            </div>
+            <div style="position: absolute; top: 247px; left: 56px;">
+                 <img src="img/busqueda.png" alt="Logo Panadería" style="width: 35px;" />
+            </div>
+            <div style="position: absolute; top: 307px; left: 56px;">
+                 <img src="img/face.png" alt="Logo Panadería" style="width: 35px;" />
+            </div>
+            <div style="position: absolute; top: 367px; left: 56px;">
+                 <img src="img/insta.png" alt="Logo Panadería" style="width: 35px;" />
+            </div>
+            <div class="titulos" style="position: absolute; top: 250px; left: 615px; font-size: 20px;">
+                📍 Riohacha-La Guajira
+            </div>
+            <div class="textos" style="position: absolute; top: 250px; left: 1070px; font-size: 20px;">
+                Lunes a sabado: 8:00am - 5:00pm<br> Domingos: 8:00am - 2:00pm
+            </div>
+            <div class="titulos" style="position: absolute; top: 460px; left: 500px; font-size: 26px;">
+                Creado Por Estudiantes De Ingieneria
+            </div>
+    </div>
+    <!--  Overlay + tarjeta (oculto por defecto) -->
+        <div id="overlay-registro" class="overlay hidden">
+            <div class="card-registro">
+                <h2>Bienvenido a VillaPan</h2>
+
+                <input type="email" style="position: absolute; top: 180px; left: 22px; " id="reg-email"  placeholder="Correo electrónico"  />
+                <input type="password" style="position: absolute; top: 260px; left:22px; " id="reg-pass" placeholder="Contraseña" />
+                <input type="text" style="position: absolute; top: 100px; left:22px;" id="reg-nombre" placeholder="Nombre completo" />
+
+                <button id="btn-enviar">Registrarse</button>
+                <p class="sub-text">¡Vive la mejor experiencia!</p>
+            </div>
+        </div>
+        <div id="registro-toast" class="toast hidden">
+            <h3 id="toast-titulo"></h3>
+            <p id="toast-mensaje"></p>
+        </div>
+
+                    <!--  Botón flotante con muñequito SVG -->
+            <div id="muñequito-registro" style="
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 80px;
+            height: 80px;
+            background: transparent;
+            cursor: pointer;
+            z-index: 10000;
+            ">
+           
+            <svg width="89" height="87" viewBox="0 0 89 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_244_1202)">
+                <rect x="18" y="14" width="53.7528" height="52" rx="21.3115" fill="#FDAC00"/>
+                <path d="M46.537 54.8989V49.6147L55.2019 40.1633C55.4371 39.9055 55.6985 39.7194 55.986 39.6048C56.2736 39.4902 56.5611 39.4329 56.8486 39.4329C57.1623 39.4329 57.4629 39.4977 57.7504 39.6271C58.0379 39.7566 58.2993 39.9496 58.5345 40.2062L59.9852 41.7958C60.1943 42.0536 60.3579 42.34 60.4761 42.655C60.5942 42.9701 60.6528 43.2851 60.6517 43.6002C60.6507 43.9152 60.5984 44.2377 60.4949 44.5676C60.3914 44.8976 60.2215 45.1909 59.9852 45.4475L51.3596 54.8989H46.537ZM30.854 53.1805V48.3688C30.854 47.3951 31.083 46.5003 31.5409 45.6846C31.9989 44.8689 32.6063 44.2457 33.3633 43.815C34.9839 42.9271 36.6306 42.2615 38.3034 41.8181C39.9763 41.3748 41.6753 41.1525 43.4004 41.1514C44.3675 41.1514 45.3216 41.2161 46.2626 41.3456C47.2036 41.475 48.1445 41.6824 49.0855 41.9676L43.4004 48.197V53.1805H30.854ZM56.8486 45.2756L58.2993 43.6002L56.8486 42.0106L55.3587 43.6431L56.8486 45.2756ZM43.4004 39.4329C41.6753 39.4329 40.1985 38.7599 38.97 37.4138C37.7415 36.0677 37.1272 34.4495 37.1272 32.5592C37.1272 30.6689 37.7415 29.0507 38.97 27.7046C40.1985 26.3585 41.6753 25.6854 43.4004 25.6854C45.1256 25.6854 46.6024 26.3585 47.8309 27.7046C49.0594 29.0507 49.6736 30.6689 49.6736 32.5592C49.6736 34.4495 49.0594 36.0677 47.8309 37.4138C46.6024 38.7599 45.1256 39.4329 43.4004 39.4329Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_244_1202" x="0.950819" y="0.360656" width="87.8513" height="86.0984" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feMorphology radius="4.2623" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_244_1202"/>
+                <feOffset dy="3.40984"/>
+                <feGaussianBlur stdDeviation="6.39344"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_244_1202"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_244_1202" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+
+            </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
