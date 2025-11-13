@@ -18,6 +18,12 @@ body {
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+.menu-boton.activo-menu {
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            background-color: #e89d00;
+}
+
 .titulos {font-weight: 700; font-family: 'Rounded Mplus 1c Bold', sans-serif; color: black; display: flex; align-items: center;
 }
 

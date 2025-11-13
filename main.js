@@ -31,6 +31,11 @@ if (muñeco && overlay) {
     boton.addEventListener('click', () => {
       const destino = boton.dataset.seccion;
 
+      // Remover clase activa de todos los botones
+      botonesMenu.forEach(b => b.classList.remove('activo-menu'));
+      // Agregar clase activa al botón clickeado
+      boton.classList.add('activo-menu');
+
       ocultarTodas();
       mostrarSeccion(destino); 
 
@@ -40,6 +45,9 @@ if (muñeco && overlay) {
   });
 
   botonInicio.addEventListener('click', () => {
+    // Remover clase activa de TODOS los botones del menú
+    botonesMenu.forEach(b => b.classList.remove('activo-menu'));
+    
     ocultarTodas();
     infoArriba.style.display = 'block';
     infoAbajo.style.display  = 'block';
